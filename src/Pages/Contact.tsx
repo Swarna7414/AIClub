@@ -1,9 +1,11 @@
-const Contact: React.FC = () => {
-  
+import React from 'react';
 
+const Contact: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <h1>This is Contact ra babu</h1>
+    <div className="pt-20 min-h-screen bg-gray-50">
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-xl text-gray-800 mb-8">Contact</h1>
+      </div>
     </div>
   );
 };

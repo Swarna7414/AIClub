@@ -3,9 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Research from "./pages/Research";
-import Team from "./pages/Team";
+import People from "./pages/People";
+import Faculty from "./pages/PeoplePage/Faculty";
+import Staff from "./pages/PeoplePage/Staff";
+import Students from "./pages/PeoplePage/Students";
+import Resources from "./pages/Resources";
+import Initiatives from "./pages/Initiatives";
+import Affiliates from "./pages/Affiliates";
 import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
@@ -16,9 +20,13 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/people" element={<People />} />
+          <Route path="/faculty" element={<Faculty />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/students" element={<Students />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/initiatives" element={<Initiatives />} />
+          <Route path="/affiliates" element={<Affiliates />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
